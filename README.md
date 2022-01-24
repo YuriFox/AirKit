@@ -11,6 +11,7 @@ This is sugar framework that contains many different extensions for native Swift
 - [Features](#-features)
 - [Installation](#-installation)
     - [CocoaPods](#cocoapods)
+    - [Swift Package Manager](#swift-package-manager)
 - [Usage](#-usage)
 - [Documentation](#-documentation)
 - [License](#-license)
@@ -139,6 +140,16 @@ pod 'AirKit/WebKit', '~> 0.8'
 pod 'AirKit/CoreLocation', '~> 0.8'
 pod 'AirKit/MapKit', '~> 0.8'
 pod 'AirKit/LocalAuthentication', '~> 0.8'
+```
+
+### [Swift Package Manager](https://swift.org/package-manager/)
+The Swift Package Manager is a tool for automating the distribution of Swift code and is integrated into the swift compiler.
+
+Once you have your Swift package set up, adding `AirKit` as a dependency is as easy as adding it to the dependencies value of your Package.swift.
+```swift
+dependencies: [
+    .package(url: "https://github.com/yurii-lysytsia/AirKit", .upToNextMajor(from: "0.8.0"))
+]
 ```
 
 ## 💻 Usage 
